@@ -1,0 +1,170 @@
+.contacts-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1100px;
+}
+
+.contacts-card {
+  padding: 24px;
+}
+
+.contacts-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* НОВОЕ: текст заголовка занимает всё свободное место */
+.contacts-card-header-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* НОВОЕ: правый action не сжимается */
+.contacts-card-header-action {
+  flex-shrink: 0;
+}
+
+.contacts-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--g-color-base-info-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contacts-subtitle {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+/* --- Персоналии --- */
+.persons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.person-card {
+  padding: 16px;
+  border: 1px solid var(--g-color-line-generic);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.person-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--g-color-line-generic);
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-row-icon {
+  color: var(--g-color-text-secondary);
+  flex-shrink: 0;
+}
+
+/* --- Ссылки --- */
+.contact-link {
+  color: var(--g-color-text-link);
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-link-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--g-color-text-link);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.contact-link-row:hover {
+  text-decoration: underline;
+}
+
+.contacts-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+  padding: 12px 0;
+  border-top: 1px solid var(--g-color-line-generic);
+}
+
+/* --- Простые списки контактов --- */
+.contacts-simple-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--g-color-line-generic);
+}
+
+.contact-simple-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-simple-item-row {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+/* --- Таблица студенческого офиса --- */
+.contacts-table {
+  width: 100%;
+  margin-top: 16px;
+  border-collapse: collapse;
+}
+
+.contacts-table th,
+.contacts-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--g-color-line-generic);
+}
+
+.contacts-table th {
+  font-weight: 500;
+  color: var(--g-color-text-secondary);
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .contacts-table {
+    font-size: 13px;
+  }
+  .contacts-table th,
+  .contacts-table td {
+    padding: 8px;
+  }
+}

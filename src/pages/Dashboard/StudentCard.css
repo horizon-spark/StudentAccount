@@ -1,0 +1,34 @@
+.student-card {
+  padding: 24px;
+}
+
+/* --- Аватар --- */
+.student-card-avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* --- ФИО --- */
+.student-card-name {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+/* --- Группа · факультет --- */
+.student-card-meta {
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* --- Нижний блок с приветствием --- */
+.student-card-footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--g-color-line-generic);
+}
+
+.student-card-lessons {
+  margin-top: 4px;
+}

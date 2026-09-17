@@ -1,0 +1,36 @@
+.general-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.general-card {
+  padding: 24px;
+}
+
+.general-list {
+  margin-top: 16px;
+}
+
+.study-docs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.study-doc-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid var(--g-color-line-generic);
+  border-radius: 8px;
+}
+
+.study-doc-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

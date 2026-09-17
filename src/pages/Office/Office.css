@@ -1,0 +1,102 @@
+.office-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1300px;
+}
+
+.office-card {
+  padding: 24px;
+}
+
+.office-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.office-table {
+  margin-top: 16px;
+}
+
+.office-subtitle {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.office-link {
+  color: var(--g-color-text-link);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.office-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Стипендии --- */
+.scholarship-application-banner {
+  margin-top: 12px;
+  padding: 12px 16px;
+  background: var(--g-color-base-info-light);
+  border-radius: 8px;
+}
+
+/* --- Справки --- */
+.cert-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.cert-type-card {
+  padding: 16px;
+  border: 1px solid var(--g-color-line-generic);
+  border-radius: 8px;
+}
+
+/* --- Платежи --- */
+.payments-summary {
+  display: flex;
+  gap: 32px;
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--g-color-base-generic-ultralight);
+  border-radius: 8px;
+}
+
+.payment-summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.debt-positive {
+  color: var(--g-color-text-danger);
+}
+
+/* --- Обходной лист --- */
+.bypass-header {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--g-color-base-generic-ultralight);
+  border-radius: 8px;
+}
+
+.bypass-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 220px;
+  flex: 1;
+}

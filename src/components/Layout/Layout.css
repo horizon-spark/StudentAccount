@@ -1,0 +1,144 @@
+/* ===== Корневой контейнер ===== */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--g-color-base-background);
+}
+
+/* ===== Шапка ===== */
+.layout-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 56px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--g-color-base-background);
+  border-bottom: 1px solid var(--g-color-line-generic);
+}
+
+.layout-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.layout-header-user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.layout-header-user-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  min-width: 0;
+}
+
+.layout-header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.layout-header-btn-text {
+  margin-left: 6px;
+}
+
+/* ===== Основная область: grid [контент | навигация] ===== */
+.layout-body {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 24px;
+  padding: 24px;
+  align-items: start;
+  flex: 1;
+  width: 100%;
+}
+
+.layout-content {
+  min-width: 0;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.layout-nav {
+  position: sticky;
+  top: 80px; /* 56 шапка + 24 отступ */
+  max-height: calc(100vh - 104px);
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+/* ===== Бургер ===== */
+.layout-burger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--g-color-text-primary);
+}
+
+.layout-burger:hover {
+  background: var(--g-color-base-simple-hover);
+}
+
+/* ===== Drawer ===== */
+.layout-drawer-inner {
+  padding: 20px;
+  width: 340px;
+  max-width: 90vw;
+  height: 100%;
+  overflow-y: auto;
+  background: var(--g-color-base-background);
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 1280px) {
+  .layout-body {
+    grid-template-columns: 1fr 320px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .layout-body {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .layout-nav--desktop {
+    display: none;
+  }
+
+  .layout-burger {
+    display: flex;
+  }
+
+  .layout-header {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .layout-header-user-text {
+    display: none;
+  }
+
+  .layout-header-btn-text {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+.portfolio-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1300px;
+}
+
+.portfolio-card {
+  padding: 24px;
+}
+
+.portfolio-table-header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 16px 0 12px;
+}
+
+.portfolio-subtitle {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.portfolio-note {
+  display: block;
+  margin-top: 16px;
+  font-style: italic;
+}
