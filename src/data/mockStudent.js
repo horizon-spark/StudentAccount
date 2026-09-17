@@ -9,7 +9,7 @@ export const mockStudent = {
   lastName: 'Тестов',
   group: 'МОК-01',
   faculty: 'Моковый факультет',
-  photoUrl: 'https://example.invalid/mock-avatar.png',
+  photoUrl: '/avatars/avatar.png',
   greeting: 'Добрый день',
   todayLessonsCount: 2,
 
