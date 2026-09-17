@@ -1,18 +1,27 @@
-import { Link } from 'react-router-dom';
-import { Button, Card, Text } from '@gravity-ui/uikit';
+import { useNavigate } from 'react-router-dom';
+import { Button, Text } from '@gravity-ui/uikit';
+import './NotFound.css';
 
 export default function NotFound() {
+  const navigate = useNavigate();
+
   return (
-    <div style={{ padding: 40, display: 'flex', justifyContent: 'center' }}>
-      <Card view="filled" style={{ padding: 32, textAlign: 'center', maxWidth: 400 }}>
-        <Text variant="display-2">404</Text>
-        <Text variant="body-2" color="secondary" style={{ margin: '12px 0 20px' }}>
-          Страница не найдена
-        </Text>
-        <Link to="/dashboard">
-          <Button view="action">На главную</Button>
-        </Link>
-      </Card>
+    <div className="notfound-page">
+      <Text variant="display-3" className="notfound-code">
+        404
+      </Text>
+      <Text variant="header-2" className="notfound-title">
+        Страница не найдена
+      </Text>
+      <Text variant="body-2" color="secondary" className="notfound-description">
+        Возможно, она была удалена или вы ошиблись в адресе.
+      </Text>
+
+      <div className="notfound-actions">
+        <Button view="action" size="l" onClick={() => navigate('/')}>
+          На главную
+        </Button>
+      </div>
     </div>
   );
 }

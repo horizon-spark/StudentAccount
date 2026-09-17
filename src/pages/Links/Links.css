@@ -21,6 +21,16 @@
   align-items: flex-start;
 }
 
+.links-card-header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.links-card-description {
+  display: block;
+  margin-top: 2px;
+}
+
 .links-card-icon {
   width: 44px;
   height: 44px;

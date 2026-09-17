@@ -1,0 +1,31 @@
+.notfound-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+  text-align: center;
+  background: var(--g-color-base-background);
+}
+
+.notfound-code {
+  color: var(--g-color-text-secondary);
+  line-height: 1;
+}
+
+.notfound-title {
+  margin-top: 4px;
+}
+
+.notfound-description {
+  max-width: 420px;
+}
+
+.notfound-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}

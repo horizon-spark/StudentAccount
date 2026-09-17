@@ -1,0 +1,28 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--g-color-base-background);
+  padding: 24px;
+}
+
+.login-card {
+  padding: 32px;
+  width: 380px;
+  max-width: 100%;
+}
+
+.login-title {
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-error {
+  margin-top: -4px;
+}
