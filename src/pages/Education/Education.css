@@ -39,7 +39,6 @@
   flex: 1;
 }
 
-/* НОВОЕ: отступ под ФИО в карточке студента */
 .student-card-department {
   margin-top: 4px;
 }
@@ -75,7 +74,6 @@
   border-radius: 8px;
 }
 
-/* НОВОЕ: отступ у значения среднего балла */
 .average-score-value {
   margin-left: 12px;
 }

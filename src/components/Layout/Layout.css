@@ -73,7 +73,7 @@
 
 .layout-nav {
   position: sticky;
-  top: 80px; /* 56 шапка + 24 отступ */
+  top: 80px;
   max-height: calc(100vh - 104px);
   overflow-y: auto;
   padding-right: 4px;

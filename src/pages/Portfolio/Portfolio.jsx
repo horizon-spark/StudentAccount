@@ -18,8 +18,6 @@ export default function Portfolio() {
 }
 
 function PortfolioContent({ p }) {
-  // Единый конфиг: title + key в p + обработчик «Добавить».
-  // Так проще поддерживать: одна точка правды для пяти секций.
   const achievementSections = [
     { key: 'academic', title: 'Достижения в учебной деятельности' },
     { key: 'research', title: 'Достижения в научно-исследовательской деятельности' },

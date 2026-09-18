@@ -7,7 +7,7 @@ export async function login({ email, password }) {
   if (!email || !password) {
     throw new Error('Введите email и пароль');
   }
-  // Мок: любой непустой ввод — успех
+
   return {
     user: {
       id: 'u-1',

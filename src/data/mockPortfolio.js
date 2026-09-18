@@ -1,6 +1,3 @@
-// mockPortfolio.js
-// ВНИМАНИЕ: это тестовые данные. Все совпадения случайны.
-
 export const mockPortfolio = {
   // Достижения в учебной деятельности
   academic: [
@@ -124,7 +121,6 @@ export const mockPortfolio = {
 
   // Профессиональная деятельность — две таблицы
   professional: {
-    // Опыт работы
     workExperience: [
       {
         id: 'w-1',
@@ -143,7 +139,6 @@ export const mockPortfolio = {
         verified: false,
       },
     ],
-    // Профессиональные достижения
     professionalAchievements: [
       {
         id: 'p-1',

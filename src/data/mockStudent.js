@@ -1,8 +1,3 @@
-// mockStudent.js
-// ВНИМАНИЕ: это тестовые данные. Все совпадения случайны.
-// Домен example.invalid зарезервирован RFC 2606 и не существует.
-// Паспорт, ИНН, СНИЛС — нулевые заглушки, не настоящие.
-
 export const mockStudent = {
   firstName: 'Тест',
   middleName: 'Тестович',
@@ -25,8 +20,6 @@ export const mockStudent = {
   },
 
   widgets: [
-    // --- НОВЫЕ ---
-
     // Непрочитанные сообщения
     {
       id: 'unread',
@@ -206,7 +199,7 @@ export const mockStudent = {
     educationInstitution: 'Моковая школа',
     educationEndYear: 2021,
 
-    // Персональные документы (заглушки, не настоящие)
+    // Персональные документы
     passportSeries: '00 00',
     passportNumber: '000000',
     passportIssuedBy: 'Моковый орган выдачи',

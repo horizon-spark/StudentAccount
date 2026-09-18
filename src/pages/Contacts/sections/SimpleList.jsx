@@ -1,10 +1,6 @@
 import { Text, Icon } from '@gravity-ui/uikit';
 import { ArrowUpRightFromSquare } from '@gravity-ui/icons';
 
-/**
- * items: { id, label, value?, href? }[]
- * row: показывать label и value/href в одну строку
- */
 export default function SimpleList({ items, row = false }) {
   return (
     <div className="contacts-simple-list">

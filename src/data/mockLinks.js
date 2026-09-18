@@ -1,7 +1,3 @@
-// mockLinks.js
-// ВНИМАНИЕ: это тестовые данные. Все совпадения случайны.
-// Домен example.invalid зарезервирован RFC 2606 и не существует.
-
 export const mockLinks = [
   {
     id: 'schedule',

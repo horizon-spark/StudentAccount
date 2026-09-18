@@ -25,7 +25,6 @@ export default function Layout() {
     if (userStatus === 'idle') fetchUser();
   }, [userStatus, fetchUser]);
 
-  // Закрытие Drawer по клику в любую область страницы вне его содержимого
   useEffect(() => {
     if (!isMenuOpen) return;
 

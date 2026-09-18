@@ -1,7 +1,3 @@
-// mockContacts.js
-// ВНИМАНИЕ: это тестовые данные. Все совпадения случайны.
-// Домен example.invalid зарезервирован RFC 2606 и не существует.
-
 export const mockContacts = {
   // === Учебное подразделение ===
   academicUnit: {

@@ -9,7 +9,6 @@ import {
   Envelope,
 } from '@gravity-ui/icons';
 
-// Ключи из mockLinks -> реальные иконки Gravity UI
 export const linkIconMap = {
   calendar: Calendar,
   eios: GraduationCap,

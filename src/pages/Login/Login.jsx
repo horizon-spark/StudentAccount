@@ -12,7 +12,7 @@ export default function Login() {
   const login = useAuthStore((s) => s.login);
   const status = useAuthStore((s) => s.status);
   const error = useAuthStore((s) => s.error);
-  const resetError = useAuthStore((s) => s.resetError); // ← если нет — убери строку и useEffect ниже
+  const resetError = useAuthStore((s) => s.resetError);
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -44,9 +44,7 @@ export default function Login() {
     try {
       await login({ email, password });
       navigate(from, { replace: true });
-    } catch {
-      // ошибка уже в сторе
-    }
+    } catch {}
   };
 
   return (

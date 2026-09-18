@@ -16,7 +16,6 @@
   flex-wrap: wrap;
 }
 
-/* НОВОЕ: текст заголовка занимает всё свободное место */
 .contacts-card-header-text {
   flex: 1;
   min-width: 0;
@@ -24,7 +23,6 @@
   flex-direction: column;
 }
 
-/* НОВОЕ: правый action не сжимается */
 .contacts-card-header-action {
   flex-shrink: 0;
 }

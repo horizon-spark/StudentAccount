@@ -22,8 +22,6 @@ import LinksRow from './sections/LinksRow.jsx';
 
 import './Contacts.css';
 
-// --- Секции ---
-
 function AcademicUnitSection({ unit }) {
   return (
     <SectionCard icon={GraduationCap} title={unit.fullName}>
@@ -124,8 +122,6 @@ function OtherContactsSection({ data }) {
     </SectionCard>
   );
 }
-
-// --- Страница ---
 
 export default function Contacts() {
   const { data: c, status, error, fetch } = useAsyncData(useContactsStore);
