@@ -20,11 +20,13 @@ const columns = [
 
 function MetaItem({ label, value }) {
   return (
-    <div>
-      <Text variant="caption-2" color="secondary">
+    <div className="bypass-meta">
+      <Text variant="caption-2" color="secondary" className="bypass-meta-label">
         {label}
       </Text>
-      <Text variant="body-2">{value}</Text>
+      <Text variant="body-2" className="bypass-meta-value" title={value}>
+        {value}
+      </Text>
     </div>
   );
 }

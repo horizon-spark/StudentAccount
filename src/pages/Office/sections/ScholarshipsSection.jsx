@@ -46,6 +46,7 @@ export default function ScholarshipsSection({ data }) {
           <Text variant="body-2">
             Приём заявлений открыт до <b>{application.deadline}</b>
           </Text>
+          &nbsp;
           <Text variant="caption-1" color="secondary">
             Период: {application.periodLabel}
           </Text>

@@ -57,6 +57,7 @@ export default function CertificatesSection({ data }) {
         {availableTypes.map((t) => (
           <div key={t.id} className="cert-type-card">
             <Text variant="subheader-2">{t.title}</Text>
+            &nbsp;
             <Text variant="caption-1" color="secondary">
               {t.description}
             </Text>

@@ -87,10 +87,11 @@
 }
 
 /* --- Обходной лист --- */
+/* --- Обходной лист --- */
 .bypass-header {
   display: flex;
   gap: 32px;
-  align-items: center;
+  align-items: flex-start; /* было center */
   flex-wrap: wrap;
   margin-top: 16px;
   padding: 16px;
@@ -98,10 +99,29 @@
   border-radius: 8px;
 }
 
+.bypass-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0; /* новое: разрешает сжатие */
+  max-width: 320px; /* новое: не растягивается бесконечно */
+}
+
+.bypass-meta-label {
+  display: block;
+}
+
+.bypass-meta-value {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .bypass-progress {
   display: flex;
   flex-direction: column;
   gap: 6px;
   min-width: 220px;
-  flex: 1;
+  flex: 1 1 220px; /* было flex: 1 — теперь базовая ширина 220px */
 }
